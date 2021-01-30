@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "JLINKAdapter"
+Date "2019-12-04"
+Rev "A"
+Comp "Superlative Semiconductor LLC"
+Comment1 "Copyright 2021 Superlative Semiconductor LLC."
+Comment2 "Licensed under CERN-OHL-P v2 or later."
+Comment3 "This source provided WITHOUT ANY EXPRESS OR IMPLIED WARRANTY."
+Comment4 "Author: E. Keehr"
+$EndDescr
+$Comp
+L JLINKAdapter:CONN_01X04 P1
+U 1 1 58143384
+P 4275 3325
+F 0 "P1" H 4352 3411 50  0000 L CNN
+F 1 "CONN_01X04" H 4352 3320 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 3400 3625 50  0000 L CNN
+F 3 "" H 4275 3325 50  0000 C CNN
+	1    4275 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L JLINKAdapter:CONN_02X10 P2
+U 1 1 581433C2
+P 5900 3350
+F 0 "P2" H 5900 4105 50  0000 C CNN
+F 1 "CONN_02X10" H 5900 4014 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10" H 5900 3923 50  0000 C CNN
+F 3 "" H 5900 2150 50  0000 C CNN
+	1    5900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5814341C
+P 6300 3900
+F 0 "#PWR01" H 6300 3650 50  0001 C CNN
+F 1 "GND" H 6305 3727 50  0000 C CNN
+F 2 "" H 6300 3900 50  0000 C CNN
+F 3 "" H 6300 3900 50  0000 C CNN
+	1    6300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 58143434
+P 3950 3600
+F 0 "#PWR02" H 3950 3350 50  0001 C CNN
+F 1 "GND" H 3955 3427 50  0000 C CNN
+F 2 "" H 3950 3600 50  0000 C CNN
+F 3 "" H 3950 3600 50  0000 C CNN
+	1    3950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3600 3950 3475
+Wire Wire Line
+	3950 3475 4075 3475
+Wire Wire Line
+	6300 3900 6300 3800
+Wire Wire Line
+	6300 3000 6150 3000
+Wire Wire Line
+	6150 3100 6300 3100
+Connection ~ 6300 3100
+Wire Wire Line
+	6150 3200 6300 3200
+Connection ~ 6300 3200
+Wire Wire Line
+	6150 3300 6300 3300
+Connection ~ 6300 3300
+Wire Wire Line
+	2150 2900 3950 2900
+Wire Wire Line
+	3950 2900 3950 3175
+Wire Wire Line
+	3950 3175 4075 3175
+Wire Wire Line
+	5650 3200 4900 3200
+Wire Wire Line
+	4900 3200 4900 3900
+Wire Wire Line
+	4900 3900 3800 3900
+Wire Wire Line
+	3800 3900 3800 3275
+Wire Wire Line
+	3350 3275 3800 3275
+Wire Wire Line
+	5650 3300 5000 3300
+Wire Wire Line
+	5000 3300 5000 4000
+Wire Wire Line
+	5000 4000 3700 4000
+Wire Wire Line
+	3700 4000 3700 3375
+Wire Wire Line
+	3250 3375 3700 3375
+Wire Wire Line
+	6150 3400 6300 3400
+Connection ~ 6300 3400
+Wire Wire Line
+	6150 3500 6300 3500
+Connection ~ 6300 3500
+Wire Wire Line
+	6150 3600 6300 3600
+Connection ~ 6300 3600
+Wire Wire Line
+	6150 3700 6300 3700
+Connection ~ 6300 3700
+Wire Wire Line
+	6150 3800 6300 3800
+Connection ~ 6300 3800
+NoConn ~ 6150 2900
+NoConn ~ 5650 3000
+NoConn ~ 5650 3100
+NoConn ~ 5650 3400
+NoConn ~ 5650 3500
+NoConn ~ 5650 3600
+NoConn ~ 5650 3700
+NoConn ~ 5650 3800
+Text Label 5050 2900 0    60   ~ 0
+VTREF
+Text Label 5125 3200 0    60   ~ 0
+SWDIO
+Text Label 5125 3300 0    60   ~ 0
+SWCLK
+$Comp
+L JLINKAdapter:CONN_02X05 P3
+U 1 1 58153D8A
+P 2575 3375
+F 0 "P3" H 2575 3880 50  0000 C CNN
+F 1 "CONN_02X05" H 2575 3789 50  0000 C CNN
+F 2 "JLINKAdapter:Pin_Header_Straight_2x05_Pitch1.27mm" V 1950 3450 50  0000 C CNN
+F 3 "" H 2575 2175 50  0000 C CNN
+	1    2575 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 3175 2150 3175
+Wire Wire Line
+	2150 3175 2150 2900
+Connection ~ 3950 2900
+Wire Wire Line
+	3350 3275 3350 3175
+Wire Wire Line
+	3350 3175 2825 3175
+Connection ~ 3800 3275
+Wire Wire Line
+	3250 3375 3250 3275
+Wire Wire Line
+	3250 3275 2825 3275
+Connection ~ 3700 3375
+$Comp
+L power:GND #PWR03
+U 1 1 58153EFA
+P 2100 3675
+F 0 "#PWR03" H 2100 3425 50  0001 C CNN
+F 1 "GND" H 2105 3502 50  0000 C CNN
+F 2 "" H 2100 3675 50  0000 C CNN
+F 3 "" H 2100 3675 50  0000 C CNN
+	1    2100 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3675 2100 3575
+Wire Wire Line
+	2100 3275 2325 3275
+Wire Wire Line
+	2325 3375 2100 3375
+Connection ~ 2100 3375
+Wire Wire Line
+	2325 3575 2100 3575
+Connection ~ 2100 3575
+NoConn ~ 2825 3375
+NoConn ~ 2825 3475
+NoConn ~ 2825 3575
+NoConn ~ 2325 3475
+Wire Wire Line
+	6300 3100 6300 3000
+Wire Wire Line
+	6300 3200 6300 3100
+Wire Wire Line
+	6300 3300 6300 3200
+Wire Wire Line
+	6300 3400 6300 3300
+Wire Wire Line
+	6300 3500 6300 3400
+Wire Wire Line
+	6300 3600 6300 3500
+Wire Wire Line
+	6300 3700 6300 3600
+Wire Wire Line
+	6300 3800 6300 3700
+Wire Wire Line
+	3950 2900 5650 2900
+Wire Wire Line
+	3800 3275 4075 3275
+Wire Wire Line
+	3700 3375 4075 3375
+Wire Wire Line
+	2100 3375 2100 3275
+Wire Wire Line
+	2100 3575 2100 3375
+$EndSCHEMATC
